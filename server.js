@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 
-const port = 3001;
+const port =  process.env.PORT || 3001;
 //Adding this in to show chnages 
 
 //"DRIVER=SQL Server;Server=FCNYSQL01;Database=Freedom;uid=wamp;password=wamp
