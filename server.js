@@ -2,10 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
+
 const port = 3001;
+//Adding this in to show chnages 
 
-
-//"DRIVER=SQL Server;Server=FCNYSQL01;Database=Freedom;uid=wamp;password=wamp;   JOIN medflyt.vw.visitinstance ON "
+//"DRIVER=SQL Server;Server=FCNYSQL01;Database=Freedom;uid=wamp;password=wamp
+//;   JOIN medflyt.vw.visitinstance ON test "
 app.use(express.json());
 app.use(cors())
 app.get('/:caregiverCode/:order', async function(req, res){
