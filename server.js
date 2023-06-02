@@ -9,6 +9,9 @@ const port = process.env.PORT || 3001;
 //"DRIVER=SQL Server;Server=FCNYSQL01;Database=Freedom;uid=wamp;password=wamp;   JOIN medflyt.vw.visitinstance ON "
 app.use(express.json());
 app.use(cors())
+app.get('/', (req, res)=> {
+    res.send("Server Running")
+})
 app.get('/:caregiverCode/:order', async function(req, res){
     
    
